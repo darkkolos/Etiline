@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_historico">
+
+    <fragment
+        android:id="@+id/navigation_historico"
+        android:name="com.example.etiline.ui.historico.HistoricoFragment"
+        android:label="@string/title_historico"
+        tools:layout="@layout/fragment_historico" />
+
+    <fragment
+        android:id="@+id/navigation_calcular"
+        android:name="com.example.etiline.ui.calcular.CalcularFragment"
+        android:label="@string/titulo_calcular"
+        tools:layout="@layout/fragment_calcular" />
+
+    <fragment
+        android:id="@+id/navigation_informacao"
+        android:name="com.example.etiline.ui.informacao.InformacaoFragment"
+        android:label="@string/title_informacao"
+        tools:layout="@layout/fragment_informacao" />
+</navigation>

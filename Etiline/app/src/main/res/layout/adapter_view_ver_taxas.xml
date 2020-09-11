@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="100">
+
+    <TextView
+        android:id="@+id/data_taxa"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="60"
+        android:gravity="center"
+        android:text="19-12-2020"
+        android:textAlignment="center"
+        android:textColor="@color/preto"
+        android:textSize="30sp" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:background="@color/laranja_claro" />
+
+    <TextView
+        android:id="@+id/valor_taxa"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="30"
+        android:gravity="center"
+        android:text="1.21"
+        android:textAlignment="center"
+        android:textColor="@color/preto"
+        android:textSize="30sp" />
+
+</LinearLayout>

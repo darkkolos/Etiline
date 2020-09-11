@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ui.calcular.CalcularFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/texto_inicial"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Escolhe a percentagem de álcool da tua bebida"
+            android:textColor="@color/preto"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imagem_cerveja"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:src="@drawable/cerveja"
+            app:layout_constraintEnd_toStartOf="@+id/imagem_vinho"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/texto_inicial" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imagem_cerveja"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Cervejas\n5% de álcool"
+            android:textAllCaps="true"
+            android:textColor="@color/preto"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/imagem_cerveja"
+            app:layout_constraintStart_toStartOf="@+id/imagem_cerveja"
+            app:layout_constraintTop_toBottomOf="@+id/imagem_cerveja" />
+
+
+        <ImageView
+            android:id="@+id/imagem_vinho"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/vinho"
+            app:layout_constraintEnd_toStartOf="@+id/imagem_licor"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imagem_cerveja"
+            app:layout_constraintTop_toBottomOf="@+id/texto_inicial" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imagem_vinho"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Vinhos\n12% de álcool"
+            android:textAllCaps="true"
+            android:textColor="@color/preto"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/imagem_vinho"
+            app:layout_constraintStart_toStartOf="@+id/imagem_vinho"
+            app:layout_constraintTop_toBottomOf="@+id/imagem_vinho" />
+
+
+        <ImageView
+            android:id="@+id/imagem_licor"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:src="@drawable/liquor"
+            app:layout_constraintEnd_toStartOf="@+id/imagem_shot"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imagem_vinho"
+            app:layout_constraintTop_toBottomOf="@+id/texto_inicial" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imagem_licor"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Licores\n20% de álcool"
+            android:textAllCaps="true"
+            android:textColor="@color/preto"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/imagem_licor"
+            app:layout_constraintStart_toStartOf="@+id/imagem_licor"
+            app:layout_constraintTop_toBottomOf="@+id/imagem_licor" />
+
+        <ImageView
+            android:id="@+id/imagem_shot"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/shot"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imagem_licor"
+            app:layout_constraintTop_toBottomOf="@+id/texto_inicial" />
+
+        <TextView
+            android:id="@+id/texto_shots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imagem_shot"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Shots\n40% de álcool"
+            android:textAllCaps="true"
+            android:textColor="@color/preto"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/imagem_shot"
+            app:layout_constraintStart_toStartOf="@+id/imagem_shot"
+            app:layout_constraintTop_toBottomOf="@+id/imagem_shot" />
+
+        <EditText
+            android:id="@+id/percentagem"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Percentagem 0 - 100"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/texto_shots" />
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Escolhe a quantidade que bebeste"
+            android:textColor="@color/preto"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/percentagem" />
+
+        <SeekBar
+            android:id="@+id/barra_quantidade"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <EditText
+            android:id="@+id/quantidade"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Quantidade em ml"
+            android:inputType="number"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/barra_quantidade" />
+
+
+        <EditText
+            android:id="@+id/peso"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Peso em kg"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/quantidade" />
+
+        <RadioGroup
+            android:id="@+id/grupo_radio_sexo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/peso">
+
+            <RadioButton
+                android:id="@+id/radio_masculino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Masculino" />
+
+            <RadioButton
+                android:id="@+id/radio_feminino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Feminino" />
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:id="@+id/grupo_radio_refeicao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/grupo_radio_sexo">
+
+            <RadioButton
+                android:id="@+id/radio_em_refeicao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Em refeição" />
+
+            <RadioButton
+                android:id="@+id/radio_jejum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Em jejum" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/limpar_botao"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/botao_redondo"
+            android:text="Limpar"
+            android:textColor="@color/branco_branco"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/guardar_botao"
+            app:layout_constraintTop_toBottomOf="@+id/grupo_radio_refeicao" />
+
+        <Button
+            android:id="@+id/guardar_botao"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/botao_redondo"
+            android:text="Calcular"
+            android:textColor="@color/branco_branco"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/limpar_botao"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/grupo_radio_refeicao" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

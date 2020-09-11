@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_calcular"
+        android:icon="@drawable/baseline_add_black_24dp"
+        android:title="@string/titulo_calcular" />
+
+    <item
+        android:id="@+id/navigation_historico"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_historico" />
+
+    <item
+        android:id="@+id/navigation_informacao"
+        android:icon="@drawable/baseline_info_black_24dp"
+        android:title="@string/title_informacao" />
+
+</menu>
